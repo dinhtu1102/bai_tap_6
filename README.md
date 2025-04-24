@@ -97,10 +97,21 @@ b4 : Ấn Excute để chạy file thành công ở database sv_tnut trong serve
 - COLLATE Vietnamese_CI_AS	Sắp xếp đúng chuẩn tiếng Việt có dấu. Ví dụ: Ánh trước Bình, Đức sau Duy, không theo bảng mã ASCII
   
 10. HÃY NHẬP SQL ĐỂ LIỆT KÊ CÁC SV NỮ NGÀNH KMT CÓ TRONG BẢNG SV (TRÌNH BÀY QUÁ TRÌNH SUY NGHĨ VÀ GIẢI NHỮNG VỨNG MẮC)
-    
+
+CÁCH 1: 
+ 
 - em thấy dữ liệu của các trường của bảng SV được tạo , ko có trường phân biệt NAM Nữ
   
 - Em nghĩ mình nên thêm một trường giới tính nữa vào bảng SV ( nam / nữ )
 
-- nếu ko có giới tính chỉ có cách là nêu 
+CÁCH 2
 
+- nếu ko có giới tính chỉ có cách là nêu những tên con gái ra như Hiền, mai , thảo , hương, giang , linh, phương, trang , my , mi , thơ... để truy vấn ra danh schs nữ
+
+- chỉ ra các họ đệm như thị ,ngọc, mai , thùy ,diễm ,thanh...
+
+=> cách này khá mất thời gian và ko đảm bảo đủ danh sách 
+
+![image](https://github.com/user-attachments/assets/e76eb7ab-6e6b-4634-abfe-3858da84cfa1)
+
+=> kết quả truy vấn tuy ra đanh sách nữ nhưng mà ko đủ và khá mất thời gian .em nghĩ cách tốt nhất vẫn phải thêm trường nam/nữ  để phân biệt
